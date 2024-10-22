@@ -1,2 +1,0 @@
-#inclode <iostream>
-std::cout << "Hello,world";
