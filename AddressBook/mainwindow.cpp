@@ -55,7 +55,7 @@
 
 
       if(name.isEmpty() || lastname.isEmpty() || address.isEmpty() || emailaddress.isEmpty()){
-         QMessageBox::warning(this, "Input Error", "All Fields must befilled.");
+         QMessageBox::warning(this, "Input Error", "All Fields must be filled.");
          return;
      }
       if(!emailaddress.contains('@')){
