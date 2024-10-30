@@ -59,7 +59,7 @@
          return;
      }
       if(!emailaddress.contains('@')){
-         QMessageBox::warning(this,"Email Error", "Email must contain '@' symbol");
+         QMessageBox::warning(this,"Email Error", "Email address must contain '@' symbol.");
           return;
      }
      QString entry = name + " " + lastname + "  lives in  " + address + ":" + " Email address is " +emailaddress ;
