@@ -55,7 +55,7 @@
 
 
       if(name.isEmpty() || lastname.isEmpty() || address.isEmpty() || emailaddress.isEmpty()){
-         QMessageBox::warning(this, "Input Error", "Both Fields must befilled.");
+         QMessageBox::warning(this, "Input Error", "All Fields must befilled.");
          return;
      }
       if(!emailaddress.contains('@')){
@@ -72,8 +72,8 @@
      emailaddressField->clear();
 
  }
- void MainWindow::deleteEntry()
- {QListWidgetItem* selectedItem = entryList->currentItem();
+ void MainWindow::deleteEntry(){
+ QListWidgetItem* selectedItem = entryList->currentItem();
      if(selectedItem){
          delete entryList->takeItem(entryList->row(selectedItem));
  }else{
